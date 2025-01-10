@@ -1,4 +1,5 @@
 #language: pt
+  @home
 Funcionalidade: Acessar a página do BugaBank
 
   Cenario: Acessar a página do BugaBank

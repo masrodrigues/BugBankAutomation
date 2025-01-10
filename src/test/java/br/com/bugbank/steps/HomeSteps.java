@@ -26,7 +26,8 @@ public class HomeSteps extends BaseSteps {
      * Este metodo faz o navegador acessar a URL do sistema BugBank.
      */
     @Quando("o usuário acessa a página BugBank")
-    public void oUsuarioAcessaAPaginaBugBank() {
+    public void oUsuarioAcessaAPaginaBugBank() throws InterruptedException {
+
         // Chama o método da HomePage para acessar a URL principal do sistema
         homePage.acessarPagina();
     }
