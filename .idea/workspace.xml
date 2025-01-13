@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="33b89ddc-fd09-4e6f-9839-6fd3933975c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/HomePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankRegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankRegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/HomeSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +65,7 @@
     "Cucumber Java.Feature: BugBankRegister.executor": "Run",
     "Cucumber Java.Feature: HomePage (1).executor": "Run",
     "Cucumber Java.Feature: HomePage.executor": "Run",
+    "Cucumber Java.Scenario: : Login com sucesso.executor": "Run",
     "Cucumber Java.Scenario: Cadastro com erro no campo email.executor": "Run",
     "Cucumber Java.Scenario: Cadastro com erro no campo nome.executor": "Run",
     "Cucumber Java.Scenario: Cadastro com sucesso.executor": "Run",
@@ -98,15 +97,15 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: HomePage">
-    <configuration name="Feature: BugBankRegister" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: : Login com sucesso">
+    <configuration name="Feature: BugBankLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankLogin.feature" />
       <option name="GLUE" value="br.com.bugbank.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="BugBankAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: BugBankRegister" />
+      <option name="SUGGESTED_NAME" value="Feature: BugBankLogin" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,15 +135,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Cadastro com erro no campo email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Cadastro com sucesso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" />
       <option name="GLUE" value="br.com.bugbank.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="BugBankAutomation" />
-      <option name="NAME_FILTER" value="^Cadastro com erro no campo email$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Cadastro com erro no campo email$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Cadastro com erro no campo email" />
+      <option name="NAME_FILTER" value="^Cadastro com sucesso$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Cadastro com sucesso$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Cadastro com sucesso" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -156,15 +155,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Cadastro com erro no campo nome" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: : Login com sucesso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankLogin.feature" />
       <option name="GLUE" value="br.com.bugbank.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="BugBankAutomation" />
-      <option name="NAME_FILTER" value="^Cadastro com erro no campo nome$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Cadastro com erro no campo nome$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Cadastro com erro no campo nome" />
+      <option name="NAME_FILTER" value="^\: Login com sucesso$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^\: Login com sucesso$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: : Login com sucesso" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -193,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: HomePage" />
+        <item itemvalue="Cucumber Java.Scenario: : Login com sucesso" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Cadastro com erro no campo email" />
-        <item itemvalue="Cucumber Java.Feature: BugBankRegister" />
-        <item itemvalue="Cucumber Java.Scenario: Cadastro com erro no campo nome" />
+        <item itemvalue="Cucumber Java.Scenario: Cadastro com sucesso" />
+        <item itemvalue="Cucumber Java.Feature: BugBankLogin" />
+        <item itemvalue="Cucumber Java.Feature: HomePage" />
       </list>
     </recent_temporary>
   </component>

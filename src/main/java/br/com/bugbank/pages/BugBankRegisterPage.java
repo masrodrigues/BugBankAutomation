@@ -31,8 +31,10 @@ public class BugBankRegisterPage {
 
     // Métodos para interagir com a página
     public void clicarNoBotaoRegistrar() {
-        driver.findElement(botaoRegistrar).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(botaoRegistrar)).click();
     }
+
 
     public void preencherFormularioCadastro(String email, String nome, String senha) {
         driver.findElement(campoEmail).sendKeys(email);
@@ -48,18 +50,18 @@ public class BugBankRegisterPage {
     }
 
     public String obterMensagemSucesso() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement mensagemElement = wait.until(ExpectedConditions.visibilityOfElementLocated(mensagemSucessoModal));
         return mensagemElement.getText();
     }
     public String obterMensagemErro() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement mensagemElement = wait.until(ExpectedConditions.visibilityOfElementLocated(mensagemErro));
         return mensagemElement.getText();
     }
 
     public String obterMensagemObrigatoria() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement mensagemElement = wait.until(ExpectedConditions.visibilityOfElementLocated(menagemObrigatoria));
         return mensagemElement.getText();
     }

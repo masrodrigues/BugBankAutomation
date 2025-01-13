@@ -10,7 +10,7 @@ import org.junit.runner.RunWith; // Anotação para especificar qual classe de r
 // Configurações para a execução dos testes com o Cucumber
 @CucumberOptions(
     // Localização dos arquivos de especificação de cenários (features)
-    tags = "",
+    tags = "@login",
     features = "src/test/java/br/com/bugbank/features",
 
     // Localização dos arquivos de steps, onde estão as implementações dos cenários
