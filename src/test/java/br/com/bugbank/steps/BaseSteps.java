@@ -1,21 +1,22 @@
 package br.com.bugbank.steps;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseSteps {
-    protected WebDriver driver;
+    // Static permite que o driver seja compartilhado entre outas clssses
+    protected static WebDriver driver;
 
-    public void setUpDriver() {
-        WebDriverManager.chromedriver().setup();
+    public static void abrirNavegador() {
+        // Selenium Manager
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
-    public void tearDownDriver() {
+    public static void fecharNavegador() {
         if (driver != null) {
             driver.quit();
+            driver = null;
         }
     }
 }

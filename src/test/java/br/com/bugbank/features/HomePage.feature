@@ -1,8 +1,10 @@
-#language: pt
-  @home
-Funcionalidade: Acessar a página do BugaBank
+# language: pt
 
-  Cenario: Acessar a página do BugaBank
-    Dado que o usuário abre o navegador
-    Quando o usuário acessa a página BugBank
-    Entao a página BugBank é exibida com sucesso
+@home
+
+Funcionalidade: Acessar a pagina do BugBank
+
+  Cenario: Validar acesso a home page
+    Dado que o usuario abre o navegador
+    Quando o usuario acessa a pagina BugBank
+    Entao a pagina Bugabank é exibida com sucesso

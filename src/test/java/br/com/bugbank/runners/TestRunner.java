@@ -1,31 +1,30 @@
 package br.com.bugbank.runners;
 
-import io.cucumber.junit.Cucumber; // Classe principal para executar testes com Cucumber no JUnit
-import io.cucumber.junit.CucumberOptions; // Permite configurar opções para a execução do Cucumber
-import org.junit.runner.RunWith; // Anotação para especificar qual classe de runner será usada
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-// Especifica que esta classe usará o runner do Cucumber para execução dos testes
 @RunWith(Cucumber.class)
-
-// Configurações para a execução dos testes com o Cucumber
 @CucumberOptions(
-    // Localização dos arquivos de especificação de cenários (features)
-    tags = "@login",
-    features = "src/test/java/br/com/bugbank/features",
+    // Defina quais testes rodar. Use "not @ignore" para rodar tudo que não estiver ignorado
+    // Ou use tags = "@login or @Registro" para rodar os dois
+    tags = "",
 
-    // Localização dos arquivos de steps, onde estão as implementações dos cenários
+    features = "src/test/java/br/com/bugbank/features",
     glue = "br.com.bugbank.steps",
 
-    // Configuração de plugins para saída de relatórios e logs
+    // GERAÇÃO DE RELATÓRIOS
     plugin = {
-        "pretty", // Exibe os resultados dos testes de forma legível no console
-        "html:target/cucumber-reports.html" // Gera um relatório HTML na pasta target
+        "pretty",
+        "html:target/cucumber-reports.html",
+        "json:target/cucumber-reports.json" // Útil se quiser integrar com Jenkins depois
     },
 
-    // Configuração para exibir as saídas de logs no console sem caracteres desnecessários
-    monochrome = true
+    monochrome = true,
+
+    // IMPORTANTE: Faz o Cucumber sugerir métodos no padrão Java (camelCase)
+    snippets = CucumberOptions.SnippetType.CAMELCASE
+
 )
 public class TestRunner {
-    // Esta classe serve como ponto de entrada para rodar os testes automatizados.
-    // Não precisa de métodos ou lógica adicional, pois a execução é controlada pelo Cucumber.
 }

@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33b89ddc-fd09-4e6f-9839-6fd3933975c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankRegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankRegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankLoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/BugBankRegisterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bugbank/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankLogin.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/HomePage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BugBankLoginSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/BugBankRegisterSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bugbank/steps/HomeSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;masrodrigues&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -50,11 +67,16 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/masrodrigues/BugBankAutomation.git&quot;,
+    &quot;accountId&quot;: &quot;29c76d1b-01db-4a71-864c-76eb099c9ccd&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2nkgEKZAE7EB9oD7l56cmmog98f" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,16 +98,24 @@
     "Maven.BugBankAutomation [clean,install].executor": "Run",
     "Maven.BugBankAutomation [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/marco.rodrigues/Documents/BugBankAutomation",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/marco.rodrigues/Downloads/BugBankAutomation",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.bugbank.steps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marco.rodrigues\Documents\BugBankAutomation\src\test\java\br\com\bugbank\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marco.rodrigues\Documents\BugBankAutomation\src\test\java\br\com\bugbank\features" />
@@ -97,15 +127,15 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: : Login com sucesso">
-    <configuration name="Feature: BugBankLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestRunner">
+    <configuration name="Feature: BugBankRegister" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankLogin.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" />
       <option name="GLUE" value="br.com.bugbank.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="BugBankAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: BugBankLogin" />
+      <option name="SUGGESTED_NAME" value="Feature: BugBankRegister" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -135,15 +165,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Cadastro com sucesso" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Cadastro com erro no campo nome" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/br/com/bugbank/features/BugBankRegister.feature" />
       <option name="GLUE" value="br.com.bugbank.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="BugBankAutomation" />
-      <option name="NAME_FILTER" value="^Cadastro com sucesso$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Cadastro com sucesso$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Cadastro com sucesso" />
+      <option name="NAME_FILTER" value="^Cadastro com erro no campo nome$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Cadastro com erro no campo nome$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Cadastro com erro no campo nome" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -192,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: : Login com sucesso" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Cadastro com sucesso" />
-        <item itemvalue="Cucumber Java.Feature: BugBankLogin" />
+        <item itemvalue="Cucumber Java.Scenario: Cadastro com erro no campo nome" />
+        <item itemvalue="Cucumber Java.Feature: BugBankRegister" />
         <item itemvalue="Cucumber Java.Feature: HomePage" />
+        <item itemvalue="Cucumber Java.Scenario: : Login com sucesso" />
       </list>
     </recent_temporary>
   </component>
@@ -210,5 +240,13 @@
       <updated>1729522375626</updated>
     </task>
     <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package br.com.bugbank.pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -7,10 +8,8 @@ public class HomePage {
 
     private final WebDriver driver;
 
-    // Elemento: Texto do título principal da página
     private final By tituloPagina = By.xpath("//h1[contains(text(),'O banco com bugs e falhas do seu jeito')]");
 
-    // Construtor que recebe o driver
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
