@@ -35,6 +35,11 @@ public class BugBankRegisterSteps {
         registerPage.preencherFormularioCadastro(email, nome, senha);
     }
 
+    @E("Adiciono Saldo")
+    public void adicionoSaldo() {
+        registerPage.marcarCriarContaComSaldo();
+    }
+
     @Entao("Eu vejo a mensagem de registro {string}")
     public void euVejoAMensagem(String mensagemEsperada) {
         String mensagemAtual = registerPage.obterMensagemSucesso().trim();
@@ -46,6 +51,11 @@ public class BugBankRegisterSteps {
     @E ("Eu preencho o formulário com campo nome vazio")
     public void euPreenchoOFormularioComCampoNomeVazio() {
         registerPage.preencherFormularioCadastro("marco@gmail.com", "", "123");
+    }
+
+    @E ("Clico no fechar modal da conta de sucesso")
+    public void euClicoNoFecharNodalDaContaDeSucesso(){
+        registerPage.fecharModal();
     }
 
     @Entao("Eu vejo a mensagem de campo obrigatorio {string}")

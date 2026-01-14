@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     // Defina quais testes rodar. Use "not @ignore" para rodar tudo que não estiver ignorado
     // Ou use tags = "@login or @Registro" para rodar os dois
-    tags = "",
+    tags = "@Registro",
 
     features = "src/test/java/br/com/bugbank/features",
     glue = "br.com.bugbank.steps",

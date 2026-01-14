@@ -10,6 +10,7 @@ public class HomePage {
 
     private final By tituloPagina = By.xpath("//h1[contains(text(),'O banco com bugs e falhas do seu jeito')]");
 
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }

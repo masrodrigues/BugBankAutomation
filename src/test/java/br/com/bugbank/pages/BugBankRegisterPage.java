@@ -22,7 +22,7 @@ public class BugBankRegisterPage {
     private final By campoConfirmarSenha = By.xpath(
         "//div[contains(@class, 'card__register')]//input[@name='passwordConfirmation']");
 
-    private final By checkboxSaldo = By.id("toggleAddBalance");
+    private final By checkboxSaldo = By.id("toggleAddBalance");//toggleAddBalance
     private final By botaoCadastrar = By.xpath("//button[contains(text(), 'Cadastrar')]");
 
     // MENSAGENS E MODAIS
@@ -30,7 +30,9 @@ public class BugBankRegisterPage {
     private final By mensagemErroModal = By.id("modalText");
     private final By botaoFecharModal = By.id("btnCloseModal");
 
-    private final By mensagemErroInlineGenerica = By.xpath("//p[@class='input__warging' or contains(@class, 'input__warning')]");
+
+    private final By mensagemErroInlineGenerica = By.xpath(
+        "//p[@class='input__warging' or contains(@class, 'input__warning')]");
 
     public BugBankRegisterPage(WebDriver driver) {
         this.driver = driver;
@@ -50,6 +52,7 @@ public class BugBankRegisterPage {
         driver.findElement(campoConfirmarSenha).sendKeys(senha);
     }
 
+
     public void marcarCriarContaComSaldo() {
         WebElement checkbox = driver.findElement(checkboxSaldo);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -62,10 +65,21 @@ public class BugBankRegisterPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
     }
 
+//    public void clicarNoBotaoSaldo() {
+//        // Forçar clique via JS ajuda se o botão estiver parcialmente coberto
+//        WebElement btn = driver.findElement(checkboxSaldo);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
+//    }
+
     public void fecharModal() {
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//        driver.findElement(botaoFecharModal).click();
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-            wait.until(ExpectedConditions.elementToBeClickable(botaoFecharModal)).click();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            //driver.findElement(botaoFecharModal).click();
+            WebElement btn = driver.findElement(botaoFecharModal);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
+            //wait.until(ExpectedConditions.elementToBeClickable(botaoFecharModal)).click();
         } catch (Exception e) {
             // Se o modal não estiver aberto, apenas ignora
         }
